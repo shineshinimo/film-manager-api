@@ -113,5 +113,5 @@ Currently in progress...
 
 ## 🔗 Related Projects
 
-- [🎞 Film Manager (LocalStorage version)](https://github.com/shineshinimo/film-manager) —  
+- [🎞 Film Manager (LocalStorage version)](https://github.com/shineshinimo/film-manager-ls) —  
   earlier version of the same project working fully offline using `localStorage`.
