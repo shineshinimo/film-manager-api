@@ -1,0 +1,59 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+</head>
+<body>
+    <form id="film-form">
+        <div class="form-wrap">
+            <label for="title">Title:</label><br />
+            <input type="text" id="title" name="title" /><br />
+        </div>
+        <div class="form-wrap">
+            <label for="genre">Genre:</label><br />
+            <input type="text" id="genre" name="genre" /><br />
+        </div>
+        <div class="form-wrap">
+            <label for="releaseYear">Year released:</label><br />
+            <input type="text" id="releaseYear" name="releaseYear" /><br />
+        </div>
+        <div class="form-wrap">
+            <input type="checkbox" id="isWatched" name="isWatched" />
+            <label for="isWatched">Have you watched the movie already?</label><br />
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+
+    <form class="film-filter__container">
+        <div class="film-filter__content">
+            <input class="film-filter__input" id="filter-title" type="text" placeholder="Title">
+            <input class="film-filter__input" id="filter-genre" type="text" placeholder="Genre">
+            <input class="film-filter__input" id="filter-year" type="number" placeholder="Year released">
+            <select name="film-type" class="film-filter__select" id="filter-select">
+                <option value="">All</option>
+                <option value="true">Watched</option>
+                <option value="false">Unwatched</option>
+            </select>
+
+            <button type="button" class="film-delete-all">Delete all</button>
+        </form>
+
+    </div>
+    
+    <table id="film-table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>Year released</th>
+                <th>Have been seen?</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="film-tbody">
+            <!-- Rows will be inserted here -->
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
